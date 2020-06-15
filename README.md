@@ -1,6 +1,6 @@
 # Discord NLP Chatbot
 
-This chatbot uses [Dialogflow](https://dialogflow.com/) to power AI to the bot.
+This chatbot uses [Dialogflow](https://dialogflow.com/) to power AI of the bot.
 
 ## To install:
 
