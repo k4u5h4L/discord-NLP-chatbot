@@ -54,6 +54,12 @@ client.on("message", (message) => {
     //   `Confirmed cases in ${covidData.place} is ${covidData.confirmed} and ${covidData.recovered} have recovered.`
     // );
   }
+
+  if (message.content.startsWith(`${prefix}help`)) {
+    const helpMessage = `I respond to these commands:\n\n=> !chat for a small talk.\n=> !covid for a covid-19 stats.`;
+    message.channel.send(helpMessage);
+    return;
+  }
 });
 
 client.login(DISCORD_TOKEN);

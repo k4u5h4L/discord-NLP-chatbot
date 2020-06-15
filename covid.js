@@ -46,7 +46,7 @@ async function scrap(message, place) {
   );
 
   message.channel.send(
-    `Confirmed cases in ${place} is ${confirmedData.trim()} and ${recoveredData.trim()} have recovered.`
+    `Confirmed cases in ${place.toUpperCase()} is ${confirmedData.trim()} and ${recoveredData.trim()} have recovered.`
   );
 
   // console.log(urlElems.html());
