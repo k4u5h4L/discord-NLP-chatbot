@@ -7,6 +7,13 @@ This chatbot uses [Dialogflow](https://dialogflow.com/) to power AI of the bot.
 - The `!chat` command will provoke the bot. Anything following the call will be treated as a message or
   a question. The bot will read that question and answer accordingly.
 
+- The `!covid` command will fetch you the confirmed and recovered cases. Anything following the call will be treated as
+  the name of a country. The bot will scrap data accordingly using headless chrome and cheerio.
+
+## New features:
+
+- The bot will now fetch covid cases specific to a country when called.
+
 ## To install:
 
 - Have all credencials of Dialogflow and your discord bot token ready.
