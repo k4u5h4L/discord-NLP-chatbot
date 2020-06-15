@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const Discord = require("discord.js");
 const { prefix } = require("./config.json");
+const cases = require(__dirname + "/covid.js");
 
 const client = new Discord.Client();
 
@@ -40,6 +41,18 @@ client.on("message", (message) => {
     });
 
     apiaiReq.end();
+  }
+
+  if (message.content.startsWith(`${prefix}covid`)) {
+    const covidQuestion = message.content.replace(`${prefix}covid `, "");
+    console.log(covidQuestion);
+
+    cases.scrap(message, covidQuestion);
+
+    // console.log(covidData);
+    // message.channel.send(
+    //   `Confirmed cases in ${covidData.place} is ${covidData.confirmed} and ${covidData.recovered} have recovered.`
+    // );
   }
 });
 

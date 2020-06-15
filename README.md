@@ -2,6 +2,11 @@
 
 This chatbot uses [Dialogflow](https://dialogflow.com/) to power AI of the bot.
 
+## To call:
+
+- The `!chat` command will provoke the bot. Anything following the call will be treated as a message or
+  a question. The bot will read that question and answer accordingly.
+
 ## To install:
 
 - Have all credencials of Dialogflow and your discord bot token ready.
