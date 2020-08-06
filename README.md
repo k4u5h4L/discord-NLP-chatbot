@@ -21,7 +21,7 @@ This chatbot uses [Dialogflow](https://dialogflow.com/) to power AI of the bot.
 - Clone and cd into the project
 
 ```
-git clone https://github.com/theParanoidScripts/discord-NLP-chatbot.git && cd discord-NLP-chatbot
+git clone https://github.com/k4u5h4L/discord-NLP-chatbot.git && cd discord-NLP-chatbot
 ```
 
 - install dependencies
